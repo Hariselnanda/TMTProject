@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TMT</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="text_home">Home</string>
+
+    <string name="selected_item">Selected :</string>
+    <string name="belum_punya_akun">Belum Punya Akun</string>
+    <string name="daftar">Daftar</string>
+    <string name="lupa_kata_sandi">Lupa Kata Sandi</string>
+    <string name="password">Password</string>
+    <string name="email">Username</string>
+    <string name="close">Close</string>
+    <string name="please_wait">Please Wait...</string>
+    // text splash Screen
+    <string name="poweredby">Powered By</string>
+</resources>

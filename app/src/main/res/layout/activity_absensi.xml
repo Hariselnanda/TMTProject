@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_tmt"
+    tools:context=".ui.atendence.AbsensiActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/normal"
+            android:padding="@dimen/small"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_back"
+            android:text="Absensi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/iv_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/normal"
+            android:padding="@dimen/small"
+            android:src="@drawable/icon_calender" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:padding="@dimen/normal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Aktivitas"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/smaller"
+            android:textStyle="bold"
+            android:textSize="@dimen/normal"/>
+
+        <TextView
+            android:id="@+id/tv_tanggal_sekarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senin, 10 mei 2021"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:background="@drawable/rounded_transparant"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="110dp"
+                android:padding="@dimen/gap"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:layout_height="110dp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="@dimen/gap"
+                android:layout_marginBottom="@dimen/gap"
+                android:background="@color/white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap"
+                android:padding="@dimen/smaller"
+                android:background="@drawable/rounded_transparant"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absen Masuk"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/gap"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_absen_masuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum Absen Masuk"
+                    android:layout_marginBottom="@dimen/smaller"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absen Keluar"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/gap"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_absen_keluar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum Absen Keluar"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_absen_hadir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/normal"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/smaller"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_absen_hadir"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/gap"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_transparant"
+                android:text="Absen Masuk"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/gap"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:background="@drawable/rounded_abu"
+                android:text="WFH"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_red"
+            android:text="Tidak Hadir"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_absen_keluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/normal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/btn_absen_keluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_red"
+            android:text="Absen Keluar"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

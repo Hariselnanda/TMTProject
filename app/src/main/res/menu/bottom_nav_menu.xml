@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icon_home_small"
+        android:title="Beranda"/>
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/icon_terbaru_small"
+        android:title="Terbaru"/>
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/icon_bantuan_small"
+        android:title="Bantuan"/>
+
+    <item
+        android:id="@+id/navigation_profil"
+        android:icon="@drawable/icon_profile_small"
+        android:title="Profil"/>
+
+</menu>
